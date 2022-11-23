@@ -2,10 +2,20 @@ body {
     font-family: sans-serif;
 }
 
-#weather-search-params, #weather-results-container {
+#weather-search-params, #weather-results-container, #weather-for-5-days {
     width: 350px;
     margin: 15px auto;
-    text-align: center;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+#weather-forecast {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#weather-forecast >* {
+    flex:  1 400px;
 }
 
 .weather-block {
@@ -16,6 +26,7 @@ body {
     position: relative;
     margin: 15px auto;
     text-align: left;
+    flex-wrap: wrap;
 }
 
 .weather-date {
